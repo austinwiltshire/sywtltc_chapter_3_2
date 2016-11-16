@@ -2,6 +2,6 @@
 
 import ceaser
 
-def test_encode(MESSAGE, OFFSET):
+def test_encode():
     """ Tests the encode function of the script """
-    assert encode("Eric", 3) == "Hulf"
+    assert ceaser.encode("Eric", 3) == "Hulf"
