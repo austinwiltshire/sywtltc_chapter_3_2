@@ -15,3 +15,16 @@ def encode(message, offset):
             encoded = encoded + letters[pos]
 
     return encoded
+
+def decode(encoded_message, offset):
+    """ Decode function """
+    encoded = ''
+    letters = string.ascii_letters + string.punctuation + string.digits
+    for letter in encoded_message:
+        if letter == ' ':
+            encoded = encoded + ' '
+        else:
+            pos = letters.index(letter) - offset
+            encoded = encoded + letters[pos]
+
+    return encoded
