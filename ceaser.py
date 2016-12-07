@@ -5,8 +5,8 @@ import string
 
 def encode(message, offset):
     """ Encode function """
-    #assert isinstance(message) is str
-    #assert isinstance(offset) is int
+    assert message, "Please enter a message. There is nothing to encode!"
+    assert offset, "Please enter an offset."
     if offset is None:
         pass
     encoded = ''
