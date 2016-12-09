@@ -17,3 +17,8 @@ def test_decode():
     """ Tests the decode function of the script """
     assert ceaser.decode("Hulf", 3) == "Eric"
     assert ceaser.decode("S d", 3) == "P a"
+    assert ceaser.decode('"', 2) == "Z"
+    assert ceaser.decode("B", 2) == "z"
+    assert ceaser.decode("BC", -2) == "DE"
+    assert ceaser.decode("6", 4) == "2"
+    assert ceaser.decode("+", 3) == "("

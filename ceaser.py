@@ -7,8 +7,6 @@ def encode(message, offset):
     """ Encode function """
     assert message, "Please enter a message. There is nothing to encode!"
     assert offset, "Please enter an offset."
-    if offset is None:
-        pass
     encoded = ''
     letters = string.ascii_letters + string.punctuation + string.digits
     for letter in message:
