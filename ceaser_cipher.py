@@ -5,6 +5,7 @@ using a classic Caesar shift substitution (3 letter shift)"""
 
 import string
 
+shift= 3
 
 def ceaser(choice, word):
     letters = string.ascii_letters + string.punctuation + string.digits
